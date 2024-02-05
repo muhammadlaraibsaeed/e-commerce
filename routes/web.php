@@ -26,6 +26,7 @@ Route::get('/', function () {
 
 // Ajax Handling
 
+
 // Auth Route for Authentication 
 
 Auth::routes();
