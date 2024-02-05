@@ -26,8 +26,7 @@ Route::get('/', function () {
 
 // Ajax Handling
 
+// Auth Route for Authentication 
 
 Auth::routes();
-
-
 Route::get('/home', [HomeController::class, 'index'])->name('home');
