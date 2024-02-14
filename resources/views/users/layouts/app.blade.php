@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello World</title>
+    <title>Document</title>
+    @include('users.assets.header')
 </head>
 <body>
-    <h1>Muhammad Laraib Saeed</h1>
+    @yield("section")    
+    @include('users.assets.footer')
 </body>
 </html>
