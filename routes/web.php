@@ -40,4 +40,3 @@ Route::get("/pages/shopping/details",[ShopController::class,"shoppingDetail"])->
 Route::get("/pages/shopping/shoppingCart",[ShopController::class,"shoppingCart"])->name("shopping.cart");
 Route::get("/pages/shopping/checkout",[ShopController::class,"checkout"])->name("shopping.checkout");
 Route::get("/pages/blogdetails",[ShopController::class,"blogDetails"])->name("blog.details");
-
