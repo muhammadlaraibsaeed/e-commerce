@@ -12,7 +12,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        //
+        return view("users.frontend.shops.index");
     }
 
     /**
@@ -61,5 +61,20 @@ class ShopController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function about()
+    {
+        return view("users.frontend.pages.about");
+    }
+
+    public function shoppingDetail()
+    {
+         return view("users.frontend.pages.shoppingDetail");
+    }
+
+    public function shoppingCart()
+    {
+         return view("users.frontend.pages.shoppingCart");
     }
 }

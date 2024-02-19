@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,7 @@ Route::get('/', function () {
 // Frontend Development
 
 Route::resource("homes",HomeController::class);
+Route::resource("shops",ShopController::class);
 
 // Backend Development
 
@@ -32,4 +34,6 @@ Route::resource("homes",HomeController::class);
 // Auth Route for Authentication 
 
 Auth::routes();
-// Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/page/about', [ShopController::class, 'about'])->name('about.page');
+Route::get("/pages/shopping/details",[ShopController::class,"shoppingDetail"])->name("shop.details");
+Route::get("/pages/shopping/shoppingCart",[ShopController::class,"shoppingCart"])->name("shopping.cart");

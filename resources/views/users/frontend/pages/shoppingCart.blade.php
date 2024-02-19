@@ -1,7 +1,7 @@
 @extends('users.layouts.app')
 @section('content')
       <!-- Page Preloder -->
-    <div id="preloder">
+      <div id="preloder">
         <div class="loader"></div>
     </div>
 
@@ -75,7 +75,7 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="./shop.html">Shop</a></li>
+                            <li class="active"><a href="./shop.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
                                     <li><a href="./about.html">About Us</a></li>
@@ -85,7 +85,7 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li class="active"><a href="./blog.html">Blog</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
                             <li><a href="./contact.html">Contacts</a></li>
                         </ul>
                     </nav>
@@ -105,115 +105,157 @@
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-blog set-bg" data-setbg="img/breadcrumb-bg.jpg">
+    <section class="breadcrumb-option">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Our Blog</h2>
+                    <div class="breadcrumb__text">
+                        <h4>Shopping Cart</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <span>Shopping Cart</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- Blog Section Begin -->
-    <section class="blog spad">
+    <!-- Shopping Cart Section Begin -->
+    <section class="shopping-cart spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
-                            <h5>What Curling Irons Are The Best Ones</h5>
-                            <a href="#">Read More</a>
+                <div class="col-lg-8">
+                    <div class="shopping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="img/shopping-cart/cart-1.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>T-shirt Contrast Pocket</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty-2">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 30.00</td>
+                                    <td class="cart__close"><i class="fa fa-close"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="img/shopping-cart/cart-2.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>Diagonal Textured Cap</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty-2">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 32.50</td>
+                                    <td class="cart__close"><i class="fa fa-close"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="img/shopping-cart/cart-3.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>Basic Flowing Scarf</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty-2">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 47.00</td>
+                                    <td class="cart__close"><i class="fa fa-close"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="product__cart__item">
+                                        <div class="product__cart__item__pic">
+                                            <img src="img/shopping-cart/cart-4.jpg" alt="">
+                                        </div>
+                                        <div class="product__cart__item__text">
+                                            <h6>Basic Flowing Scarf</h6>
+                                            <h5>$98.49</h5>
+                                        </div>
+                                    </td>
+                                    <td class="quantity__item">
+                                        <div class="quantity">
+                                            <div class="pro-qty-2">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">$ 30.00</td>
+                                    <td class="cart__close"><i class="fa fa-close"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn">
+                                <a href="#">Continue Shopping</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn update__btn">
+                                <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
-                            <h5>Eternity Bands Do Last Forever</h5>
-                            <a href="#">Read More</a>
-                        </div>
+                <div class="col-lg-4">
+                    <div class="cart__discount">
+                        <h6>Discount codes</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Coupon code">
+                            <button type="submit">Apply</button>
+                        </form>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
-                            <h5>The Health Benefits Of Sunglasses</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-4.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
-                            <h5>Aiming For Higher The Mastopexy</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-5.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
-                            <h5>Wedding Rings A Gift For A Lifetime</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-6.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
-                            <h5>The Different Methods Of Hair Removal</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-7.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
-                            <h5>Hoop Earrings A Style From History</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-8.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
-                            <h5>Lasik Eye Surgery Are You Ready</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-9.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
-                            <h5>Lasik Eye Surgery Are You Ready</h5>
-                            <a href="#">Read More</a>
-                        </div>
+                    <div class="cart__total">
+                        <h6>Cart total</h6>
+                        <ul>
+                            <li>Subtotal <span>$ 169.50</span></li>
+                            <li>Total <span>$ 169.50</span></li>
+                        </ul>
+                        <a href="#" class="primary-btn">Proceed to checkout</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Blog Section End -->
+    <!-- Shopping Cart Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -272,7 +314,7 @@
                                 document.write(new Date().getFullYear());
                             </script>2020
                             All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -291,4 +333,5 @@
             </form>
         </div>
     </div>
+    <!-- Search End -->
 @endsection
