@@ -82,4 +82,9 @@ class ShopController extends Controller
     {
         return view("users.frontend.pages.checkout");
     }
+    
+    public function blogDetails()
+    {
+        return view("users.frontend.pages.blogDetails");
+    }
 }
