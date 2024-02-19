@@ -37,3 +37,4 @@ Auth::routes();
 Route::get('/page/about', [ShopController::class, 'about'])->name('about.page');
 Route::get("/pages/shopping/details",[ShopController::class,"shoppingDetail"])->name("shop.details");
 Route::get("/pages/shopping/shoppingCart",[ShopController::class,"shoppingCart"])->name("shopping.cart");
+Route::get("/pages/shopping/checkout",[ShopController::class,"checkout"])->name("shopping.checkout");

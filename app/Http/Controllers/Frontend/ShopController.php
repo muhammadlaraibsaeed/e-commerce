@@ -77,4 +77,9 @@ class ShopController extends Controller
     {
          return view("users.frontend.pages.shoppingCart");
     }
+
+    public function  checkout()
+    {
+        return view("users.frontend.pages.checkout");
+    }
 }
