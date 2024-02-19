@@ -1,3 +1,4 @@
+@extends('users.layouts.app')
 @section('content')
         <!-- Page Preloder -->
         <div id="preloder">

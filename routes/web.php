@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 // Frontend Development
 
+Route::resource("homes",HomeController::class);
+
 // Backend Development
 
 
@@ -30,4 +32,4 @@ Route::get('/', function () {
 // Auth Route for Authentication 
 
 Auth::routes();
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+// Route::get('/home', [HomeController::class, 'index'])->name('home');

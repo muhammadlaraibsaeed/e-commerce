@@ -8,7 +8,7 @@
     @include('users.assets.header')
 </head>
 <body>
-    @yield("section")    
+    @yield("content")    
     @include('users.assets.footer')
 </body>
 </html>
